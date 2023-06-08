@@ -1,0 +1,13 @@
+<nav class="navbar">
+    <a class="navbar-logo" href="#">Logo</a>
+    <ul class="navbar-menu">
+        <li><a [routerLink]="['/counter']">counter</a></li>
+        <li><a [routerLink]="['/home']">home</a></li>
+        <li><a [routerLink]="['/posts']">posts</a></li>
+        <li><a [routerLink]="['/posts/add']">add post</a></li>
+        <li><a [routerLink]="['/auth/login']" *ngIf="isAuthenticated">logout</a></li>
+        <li *ngIf="!isAuthenticated"><a [routerLink]="['/auth/signup']">signup</a></li>
+        <li><a [routerLink]="['/auth/login']" *ngIf="!isAuthenticated">login</a></li>
+    </ul>
+</nav>
+<router-outlet></router-outlet>

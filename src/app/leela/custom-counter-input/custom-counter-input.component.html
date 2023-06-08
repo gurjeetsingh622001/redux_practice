@@ -1,0 +1,8 @@
+<h1>{{channelName}}</h1>
+
+<div class="col-2">
+
+    <input type="number" placeholder="add value" [(ngModel)]="value" class="form-control"><br>
+</div>
+<button class="btn btn-primary" (click)="add()">add</button><br>
+<button (click)="changeChannelName()" class="btn btn-warning">Change Channel name</button>
