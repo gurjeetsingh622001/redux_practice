@@ -1,29 +1,25 @@
 .navbar {
-    background-color: #333;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-  }
-  
-  .navbar-logo {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .navbar-menu {
-    list-style-type: none;
-    display: flex;
-  }
-  
-  .navbar-menu li {
-    margin-right: 10px;
-  }
-  
-  .navbar-menu li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
+  background-color: #343a40;
+}
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.nav-link {
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+.nav-link:hover {
+  color: #ffc107;
+}
+.search-input {
+  border-radius: 20px;
+  border: 1px solid #ced4da;
+}
+.btn-custom {
+  background-color: #007bff;
+  color: white;
+}
+.btn-custom:hover {
+  background-color: #0056b3;
+}

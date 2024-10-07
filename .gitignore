@@ -128,3 +128,5 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+/.angular/cache/14.2.11/babel-webpack
+/.angular/cache/14.2.11/angular-webpack

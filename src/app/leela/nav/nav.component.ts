@@ -11,18 +11,11 @@ import { AppState } from '../redux1/app.state';
   styleUrls: ['./nav.component.css']
 })
 export class NavComponent implements OnInit {
-  isAuthenticated: boolean;
 
-  constructor(private store: Store<AuthState>) { }
+  constructor() { }
 
 
   ngOnInit(): void {
-
-    this.store.select(isAuthenticated).subscribe((data) => {
-      this.isAuthenticated = data
-      console.log(data)
-    })
-
 
   }
 

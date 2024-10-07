@@ -33,7 +33,10 @@ import { PostEditComponent } from './leela/post-edit/post-edit.component';
 import { LoginComponent } from './leela/login/login.component';
 import { EffectsModule } from '@ngrx/effects';
 import { SpinnerComponent } from './leela/spinner/spinner.component';
-
+import { CreateCustomerComponent } from './components/customer/create-customer/create-customer.component';
+import { CustomerListComponent } from './components/customer/customer-list/customer-list.component';
+import { EditCustomerComponent } from './components/customer/edit-customer/edit-customer.component';
+import { ToastrModule } from 'ngx-toastr';
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,30 +46,23 @@ import { SpinnerComponent } from './leela/spinner/spinner.component';
     PostComponent,
     UserComponent,
     UserCardComponent,
-    UserListComponent,
-    // CounterComponent,
-    // CounterButtonComponent,
-    // CounterOutputComponent,
-    // CustomCounterInputComponent,
+    UserListComponent, 
     HomeComponent,
     NavComponent,
     LoginComponent,
     SpinnerComponent,
-    // PostsComponent,
-    // ContactComponent,
-    // PostEditComponent
+    CreateCustomerComponent,
+    CustomerListComponent,
+    EditCustomerComponent, 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    ToastrModule.forRoot(),
     MaterialModule,
     HttpClientModule,
     StoreModule.forRoot(appReducer),
-    // StoreModule.forRoot({}),commented at 28 video,
-    // StoreModule.forRoot(appReducer),
-    // StoreModule.forRoot({ counter: counterReducer,posts :postReducer }),
-    // StoreModule.forRoot(rootReducer ),
     FormsModule,
     StoreDevtoolsModule.instrument({ logOnly: environment.production }),
     ReactiveFormsModule,
